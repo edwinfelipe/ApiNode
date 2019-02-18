@@ -1,60 +1,22 @@
 # ApiNode
-# Api NodeJs
+Api con nodeJs
 
-## Descripción
-El codigo aqui descrito es una api de NodeJs capaz de realizar las cuatro operaciones fundamentales de base de datos, que son solicitar datos(**get**), agregar nuevos datos(**post**), actualizar datos(**put**) y eliminarlos(**delete**).
+Dependencias:
+    body-parser: "^1.18.3,
+    express: "^4.16.4,
+    mongoose: "^5.4.13
 
----
-## Dependencias
-- Nodejs
-    - Express
-    - Mongoose
-    - Body-parser
-    - Nodemon
----    
-## Software
-- Editor de codigo: **Visual Studio Code.**  
-- Gestor de base de datos: **MongoDB.**
-- Genrerador de consultas: **Postman.**
----
-## Estructura
-- Controllers
-    - coment.js: En este archivo se encuentran las funciones necesarias para gestionar los comentarios.
-    - deparment.js: En este archivo se encuentran las funciones necesarias para gestionar los departamentos.
-    - user.js: En este archivo se encuentran las funciones necesarias para gestionar los usuarios.   
- - Models
-    - coment.js: en este archivo se establece el modelo de datos para los comentarios.
-    - department.js: en este archivo se establece el modelo de datos para los departamentos.
-    - user.js: en este archivo se establece el modelo de datos para los usuarios.
-- Routes
-    - index.js: En este archivo gestionan todas las rutas de nuestra aplicación.
-- Config.js
-- index.js
-- package.json
-
----
-## Instrucciones de arranque
-
-1. Arrancar la base de datos: Abrir una consola de comandos y escribir el comando :
-```
-mongod
-```
-2. Arrancar el servidor: En una nueva consola de comandos escribir el comando :
-```
-npm run dev
-```
-3. Una vez arrancados ambos la consola arrojara lo siguiente:
-```
-conexion a la base de datos establecida
-Servidor corriendo en el puerto: 3000
-```
-4. Tomamos el numero de puerto y escribimos en el navegador  [Click aqui](http://localhost:3000/api/user).
-
-5. Esto nos llevar a una pagina que nos mostrara los usuarios registrados en forma de objeto json.
----
-## Intrucciones para insertar datos
-1. Abrimos el programa Postman.
-2. Generamos una consulta
-- ![Imagen](./resourses/post.png)
-3. Volvemos al navegador y revisamos que el usuario se haya agregado correctamente.
----
+Programas:
+  editor de codigo: visual studio code,
+  gestor de base de datos: mongoDB,
+  framework: nodeJS
+  
+Arrancar la api:
+    para arrancar la api debes de abrir una consola en la carpeta raiz del proyecto y correr el comando
+    "npm run dev", este iniciara el servidor y te devolvera por consola el puerto en el que se esta ejecutando.
+    la ruta inicial seria localhost:3000/api/user, de ser necesario sustituir el 3000, por el puerto correspondiente
+    tambien se puede alternar entre user,department,coment.
+    
+Nota: 
+    Puede que la direccion te muestre una pagina en blanco, en ese se deben agregar entradas a la base de datos con 
+    el metodo post con postman.
