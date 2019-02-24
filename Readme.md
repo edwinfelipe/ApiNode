@@ -37,19 +37,20 @@ El codigo aqui descrito es una api de NodeJs capaz de realizar las cuatro operac
     - [NodeJS](https://nodejs.org/es/)
     - [Postman](https://www.getpostman.com/)
     - [MongoDB](https://www.mongodb.com/es/download-center/community)
-2. instalar las dependencias mensionadas en la sección "dependencias".
+2. instalar las dependencias mensionadas en la sección "dependencias". (Dentro de la carpeta del proyecto)
 ```
 npm install express
 npm install mongoose
 npm install -D nodemon
 ```
+
 3. Arrancar la base de datos: Abrir una consola de comandos y escribir el comando :
 ```
 mongod
 ```
 4. Arrancar el servidor: En una nueva consola de comandos escribir el comando :
 ```
-npm run dev
+node index.js
 ```
 5. Una vez arrancados ambos la consola arrojara lo siguiente:
 ```
