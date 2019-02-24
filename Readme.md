@@ -8,10 +8,10 @@ El codigo aqui descrito es una api de NodeJs capaz de realizar las cuatro operac
 - Nodejs
     - Express
     - Mongoose
-    - Body-parser
     - Nodemon
 ---    
 ## Software
+- JS del lado del servidor: **Nodejs.**
 - Editor de codigo: **Visual Studio Code.**  
 - Gestor de base de datos: **MongoDB.**
 - Genrerador de consultas: **Postman.**
@@ -29,27 +29,36 @@ El codigo aqui descrito es una api de NodeJs capaz de realizar las cuatro operac
     - index.js: En este archivo gestionan todas las rutas de nuestra aplicación.
 - Config.js
 - index.js
-- package.json
+
 
 ---
 ## Instrucciones de arranque
-
-1. Arrancar la base de datos: Abrir una consola de comandos y escribir el comando :
+1. instalar los programas requeridos:
+    - [NodeJS](https://nodejs.org/es/)
+    - [Postman](https://www.getpostman.com/)
+    - [MongoDB](https://www.mongodb.com/es/download-center/community)
+2. instalar las dependencias mensionadas en la sección "dependencias".
+```
+npm install express
+npm install mongoose
+npm install -D nodemon
+```
+3. Arrancar la base de datos: Abrir una consola de comandos y escribir el comando :
 ```
 mongod
 ```
-2. Arrancar el servidor: En una nueva consola de comandos escribir el comando :
+4. Arrancar el servidor: En una nueva consola de comandos escribir el comando :
 ```
 npm run dev
 ```
-3. Una vez arrancados ambos la consola arrojara lo siguiente:
+5. Una vez arrancados ambos la consola arrojara lo siguiente:
 ```
 conexion a la base de datos establecida
 Servidor corriendo en el puerto: 3000
 ```
-4. Tomamos el numero de puerto y escribimos en el navegador  [Click aqui](http://localhost:3000/api/user).
+6. Tomamos el numero de puerto y escribimos en el navegador  [Click aqui](http://localhost:3000/api/user).
 
-5. Esto nos llevar a una pagina que nos mostrara los usuarios registrados en forma de objeto json.
+7. Esto nos llevar a una pagina que nos mostrara los usuarios registrados en forma de objeto json.
 ---
 ## Intrucciones para insertar datos
 1. Abrimos el programa Postman.
