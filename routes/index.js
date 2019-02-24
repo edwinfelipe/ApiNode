@@ -3,7 +3,7 @@ const api = express.Router();
 const userCtrl = require("../controllers/user");
 const departmentCtrl = require("../controllers/department");
 const comentCtrl = require("../controllers/coment");
-api.get("/user", userCtrl.getUsers);
+api.get("/user",  userCtrl.getUsers);
 api.get("/department",departmentCtrl.getDepartments);
 api.get("/coment",comentCtrl.getComents);
 
