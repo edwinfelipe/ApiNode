@@ -39,6 +39,7 @@ El codigo aqui descrito es una api de NodeJs capaz de realizar las cuatro operac
     - [MongoDB](https://www.mongodb.com/es/download-center/community)
 2. instalar las dependencias mensionadas en la sección "dependencias". (Dentro de la carpeta del proyecto)
 ```
+npm init --yess
 npm install express
 npm install mongoose
 npm install -D nodemon
